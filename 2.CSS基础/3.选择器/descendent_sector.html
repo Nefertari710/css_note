@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h{
+            color:pink;
+        }
+        /*写不写h效果都是一样的*/
+        .red li{
+            color: red;
+        }
+        /*如果需要指定class中的class那么后面的class一定要在使用的时候前面加上.*/
+        .red .blue{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h class="red">
+        Lorem ipsum dolor sit amet consectetur.
+        <ul>
+            <li>Lorem ipsum dolor sit.</li>
+            <li class="blue">Lorem ipsum dolor sit amet consectetur.</li>
+            <li>Iusto consequuntur fugiat ab.</li>
+            <li>Dolores laboriosam dolor esse?</li>
+            <li>Deleniti quia fugiat vel!</li>
+            <li>Earum rem a exercitationem.</li>
+            <li>Quisquam molestiae voluptates tempora!</li>
+        </ul>
+    </h>
+</body>
+</html>

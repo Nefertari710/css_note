@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div li{
+            color:pink;
+        }
+        /*如果使用下面的这个写法，那么就要严格的按照等级来中间就必须要写ul元素*/
+        div>ul>li{
+            color:red;
+        }
+        /*相邻的兄弟元素*/
+        div li+.special{
+            color:green;
+        }
+        /*当前元素后面所有的li元素*/
+        .special~li{
+            color:blue;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <ul>
+            <li>Lorem ipsum dolor sit amet.</li>
+            <li class="special">Lorem ipsum dolor sit.</li>
+            <li>Pariatur ratione illum dignissimos debitis.</li>
+            <li>Minima, mollitia esse? Eligendi, quas.</li>
+            <li>Assumenda reprehenderit aperiam repellendus rerum?</li>
+            <li>Omnis placeat quidem facere odio?</li>
+        </ul>
+    </div>
+</body>
+</html>
